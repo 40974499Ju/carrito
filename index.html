@@ -16,25 +16,33 @@
 
 </head>
 
+
 <body>
   <div class="container">
-    <nav>
+    <nav id="carrito">
       <i class="bi bi-cart">
         <div class="buy-card">
           <ul class="nav-card">
-            <li>IMAGEN</li>
-            <li>NOMBRE</li>
-            <li>PRECIO</li>
-            <li>CANTIDAD</li>
+            <li>Imagen</li>
+            <li>Nombre</li>
+            <li>Precio</li>
+            <li>Cantidad</li>
 
           </ul>
-          <button>VACIAR CARRITO</button>
+          <div class="lista_de_biografias">
+            <img src="/img/german-ferrari-driver-michael-schumacher-celebrates-on-the-news-photo-1568101141.jpg">
+            <p>Michael Schumacher</p>
+            <p>$10.600</p>
+            <p>1</p>
+            <p><span>x</span></p>
+          </div>
+          <button id="vaciar_carrito">VACIAR CARRITO</button>
         </div>
       </i>
 
     </nav>
     <h1>Pilotos de Éxito:Biografias de estrellas de la Formula 1</h1>
-    <div class="grid">
+    <div class="grid" id="lista-biografias">
 
       <div class="items">
         <img src="/img/german-ferrari-driver-michael-schumacher-celebrates-on-the-news-photo-1568101141.jpg" alt="">
@@ -43,9 +51,9 @@
           <p> 7 Titulos Mundiales</p>
           <div class="precio">
             <p>$10.600</p>
-            <p>$9.200</p>
+            <p class="descuento">$9.200</p>
           </div>
-          <button>Agregar al Carrito</button>
+          <button id="agregar-biografia" data-id="1">Agregar al Carrito</button>
         </div>
       </div>
       <div class="items">
@@ -55,9 +63,9 @@
           <p>5 Titulos Mundiales</p>
           <div class="precio">
             <p>$8.000</p>
-            <p>$7.220</p>
+            <p class="descuento">$7.220</p>
           </div>
-          <button>Agregar al Carrito</button>
+          <button id="agregar-biografia" data-id="2">Agregar al Carrito</button>
         </div>
       </div>
 
@@ -68,9 +76,9 @@
           <p>3 Titulos Mundiales</p>
           <div class="precio">
             <p>$4.500</p>
-            <p>$3.900</p>
+            <p class="descuento">$3.900</p>
           </div>
-          <button>Agregar al Carrito</button>
+          <button id="agregar-biografia" data-id="3">Agregar al Carrito</button>
         </div>
       </div>
       <div class="items">
@@ -80,9 +88,9 @@
           <p>7 Titulos Mundiales</p>
           <div class="precio">
             <p>$5.550</p>
-            <p>$4.950</p>
+            <p class="descuento">$4.950</p>
           </div>
-          <button>Agregar al Carrito</button>
+          <button id="agregar-biografia" data-id="4">Agregar al Carrito</button>
         </div>
       </div>
       <div class="items">
@@ -92,9 +100,9 @@
           <p>3 Titulos Mundiales</p>
           <div class="precio">
             <p>$6.000</p>
-            <p>$5.400</p>
+            <p class="descuento">$5.400</p>
           </div>
-          <button>Agregar al Carrito</button>
+          <button id="agregar-biografia" data-id="5">Agregar al Carrito</button>
         </div>
       </div>
       <div class="items">
@@ -104,9 +112,9 @@
           <p>3 Titulos Mundiales</p>
           <div class="precio">
             <p>$11.000</p>
-            <p>$10.300</p>
+            <p class="descuento">$10.300</p>
           </div>
-          <button>Agregar al Carrito</button>
+          <button id="agregar-biografia" data-id="6">Agregar al Carrito</button>
         </div>
       </div>
       <div class="items">
@@ -116,9 +124,9 @@
           <p>4 Titulos Mundiales</p>
           <div class="precio">
             <p>$11.000</p>
-            <p>$10.300</p>
+            <p class="descuento">$10.300</p>
           </div>
-          <button>Agregar al Carrito</button>
+          <button id="agregar-biografia" data-id="7">Agregar al Carrito</button>
         </div>
       </div>
       <div class="items">
@@ -128,9 +136,9 @@
           <p>2 titulos Mundiales</p>
           <div class="precio">
             <p>$11.000</p>
-            <p>$10.300</p>
+            <p class="descuento">$10.300</p>
           </div>
-          <button>Agregar al Carrito</button>
+          <button id="agregar-biografia" data-id="8">Agregar al Carrito</button>
         </div>
       </div>
       <div class="items">
@@ -140,14 +148,15 @@
           <p>3 Titulos Mundiales</p>
           <div class="precio">
             <p>$11.000</p>
-            <p>$10.300</p>
+            <p class="descuento">$10.300</p>
           </div>
-          <button>Agregar al Carrito</button>
+          <button id="agregar-biografia" data-id="9">Agregar al Carrito</button>
         </div>
       </div>
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/main.js"></script>
 </body>
 
 
