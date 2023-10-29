@@ -1,28 +1,29 @@
-//variables//
 const carrito = document.getElementById("carrito"),
-    listaBiografias = document.getElementById("lista-biografias"),
-    contenedorCarrito = document.querySelector('.buy-card .lista_de_biografias');
+    listaBiografia = document.getElementById("lista-biografia"),
+    contenedorCarrito = document.querySelector('.buy-card .lista_de_biografia'),
     vaciarCarritoBtn = document.querySelector('#vaciar_carrito');
 
-registrarEventsListeners()
-function registrarEventsListeners() {
-    //cuando yo le de click al carrito de compras"//
-    listaBiografias.addEventListener('click', agregarBiografia);
+registrarEventListeners();
+
+function registrarEventListeners() {
+    // Cuando yo le de click al carrito de compras
+    listaBiografia.addEventListener('click', agregarBiografia);
 }
 
-function agregarBiografia (e) {
-    if (e.target.classList.contains("agregar-carrito")){
+function agregarBiografia(e) {
+    if (e.target.classList.contains("agregar-biografia")) {
         const biografiaSeleccionada = e.target.parentElement.parentElement;
-        leerInfo (biografiaSeleccionada)
+        leerInfo(biografiaSeleccionada);
     }
-    
 }
-function leerInfo(biografias) {
-    const infoBiografias = {
-        imagen : biografias.querySelector('img').src,
-        titulo: biografias.querySelector('h3').textContent,
-        precio: biografias.querySelector('.descuento').textContent,
-        id : biografias.querySelector('button').getAttribute('data-id')
-    }
 
+function leerInfo(biografia) {
+    const infoBiografia = {
+        imagen: biografia.querySelector('img').src,
+        titulo: biografia.querySelector('h3').textContent,
+        precio: biografia.querySelector('.descuento').textContent,
+        id: biografia.querySelector('button').getAttribute('data-id'),
+        cantidad: 1
+    }
+    console.log(infoBiografia);
 }
